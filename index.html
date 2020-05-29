@@ -2,27 +2,49 @@
 <html>
 
 <head>
+	<!-- Required meta tags for Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>
 		Kelly's Quarantine Caf&eacute;
 	</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- my CSS -->
 	<style>
 		body {
-			font-family: Calibri, Sans-Serif;
-			background-color: lavender;
-			margin-left: 20px;
+			background-color: #cbf3f0;
 		}
 		h1 {
+			text-align: center;
+			margin-top: 40px;
 			margin-bottom: 50px;
-		}
-		table {
-			margin-bottom: 50px;
-		}
-		td {
-			padding-left: 20px;
-			max-width: 400px;
+			color: #39a59c;
 		}
 		h2 {
-			margin-bottom: 40px;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			color: #39a59c;
+		}
+		.btn-primary {
+			background-color: #ff9f1c;
+			border-color: #ffbf69;
+		}
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:hover {
+			background-color: #e58f19;
+			border-color: #ffbf69;
+		}
+		.btn-primary:not(:disabled):not(.disabled).active:focus,
+		.btn-primary:not(:disabled):not(.disabled):active:focus,
+		.btn-primary.focus,
+		.btn-primary:focus {
+			box-shadow: 0 0 0 0.2rem rgba(255,159,28,.5)
 		}
 	</style>
 </head>
@@ -32,69 +54,98 @@
 		Kelly's Quarantine Caf&eacute;
 	</h1>
 
-	<h3>
-		Vanilla Oat Latte
-	</h3>
-	<table>
-		<tr>
-			<td>
-				<img src="https://www.tastefullbeans.com/wp-content/uploads/2014/03/Hot-latte.jpg" alt="Vanilla Oat Latte" width="300">
-			</td>
-			<td>
-				Ingredients:
-				<ul>
-					<li>2 shots espresso</li>
-					<li>1 cup oat milk</li>
-					<li>2 tablespoons vanilla syrup</li>
-				</ul>
-				<p>
-					Note that the availability of Vanilla Oat Lattes is dependent on the availability of oat milk at local grocers.
-				</p>
-			</td>
-		</tr>
-	</table>
+	<div class="container">
+		<div class="row">
 
-	<h3>
-		Skinny Mocha
-	</h3>
-	<table>
-		<tr>
-			<td>
-				<img src="https://cafedeoro-rw.com/wp-content/uploads/2017/10/mocha.jpg" alt="Skinny Mocha" width="300">
-			</td>
-			<td>
-				Ingredients:
-				<ul>
-					<li>2 shots espresso</li>
-					<li>1 cup skim milk</li>
-					<li>2 tablespoons dark chocolate syrup</li>
-				</ul>
-			</td>
-		</tr>
-	</table>
+			<!-- Vanilla Oat Latte -->
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="https://www.tastefullbeans.com/wp-content/uploads/2014/03/Hot-latte.jpg" alt="Vanilla Oat Latte" width="348">
+					<div class="card-body">
+						<div class="card-text">
+							<h3>
+								Vanilla Oat Latte
+							</h3>
+							Ingredients:
+							<ul>
+								<li>2 shots espresso</li>
+								<li>1 cup oat milk</li>
+								<li>2 tablespoons vanilla syrup</li>
+							</ul>
+							<p>
+								Note that the availability of Vanilla Oat Lattes is dependent on the availability of oat milk at local grocers.
+							</p>
+						</div>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	<h3>
-		London Fog
-	</h3>
-	<table>
-		<tr>
-			<td>
-				<img src="https://www.kitchentreaty.com/wp-content/uploads/2020/02/london-fog-drink-660x430.jpg" alt="London Fog" width="300">
-			</td>
-			<td>
-				Ingredients:
-				<ul>
-					<li>11 oz brewed Earl Grey tea</li>
-					<li>1/2 cup skim milk</li>
-					<li>2 tablespoons vanilla syrup</li>
-				</ul>
-			</td>
-		</tr>
-	</table>
+			<!-- London Fog -->
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="https://www.kitchentreaty.com/wp-content/uploads/2020/02/london-fog-drink-660x430.jpg" alt="London Fog" width="348">
+					<div class="card-body">
+						<div class="card-text">
+							<h3>
+								London Fog
+							</h3>
+							Ingredients:
+							<ul>
+								<li>11 oz brewed Earl Grey tea</li>
+								<li>1/2 cup skim milk</li>
+								<li>2 tablespoons vanilla syrup</li>
+							</ul>
+						</div>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Skinny Mocha -->
+			<div class="col-md-4">
+				<div class="card mb-4 shadow-sm">
+					<img src="https://cafedeoro-rw.com/wp-content/uploads/2017/10/mocha.jpg" alt="Skinny Mocha" width="348">
+					<div class="card-body">
+						<div class="card-text">
+							<h3>
+								Skinny Mocha
+							</h3>
+							Ingredients:
+							<ul>
+								<li>2 shots espresso</li>
+								<li>1 cup skim milk</li>
+								<li>2 tablespoons dark chocolate syrup</li>
+							</ul>
+						</div>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-primary">Add to Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 	<h2>
 		Stop by <s>soon</s> if quarantine ever ends!
 	</h2>
+
+	<!-- scripts for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
