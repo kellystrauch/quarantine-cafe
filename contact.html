@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags for Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>
+		Kelly's Quarantine Caf&eacute;
+	</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- my CSS -->
+	<style>
+		body {
+			background-color: #cbf3f0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 50px;
+			color: #39a59c;
+		}
+		.btn-primary {
+			background-color: #ff9f1c;
+			border-color: #ffbf69;
+		}
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:hover {
+			background-color: #e58f19;
+			border-color: #ffbf69;
+		}
+		.btn-primary:not(:disabled):not(.disabled).active:focus,
+		.btn-primary:not(:disabled):not(.disabled):active:focus,
+		.btn-primary.focus,
+		.btn-primary:focus {
+			box-shadow: 0 0 0 0.2rem rgba(255,159,28,.5)
+		}
+		input,
+		textarea{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		label{
+			margin-bottom: 4px;
+		}
+		/*restrict container width and submit button size on desktop*/
+		@media (min-width: 768px) {
+			#form-container{
+				width: 500px;
+			}
+			input[type=submit]{
+				width: 90px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Contact Us
+	</h1>
+
+	<div class="container" id="form-container">
+		<form action="/action_page.php" method="post">
+			<div class="row">
+				<div class="col-sm">
+					<label for="fname">First Name:</label><br>
+					<input type="text" id="fname" name="fname" required>
+				</div>
+				<div class="col-sm">
+					<label for="lname">Last Name:</label><br>
+					<input type="text" id="lname" name="lname" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<label for="email">Email Address:</label><br>
+					<input type="email" id="email" name="email" required><br>
+				</div>
+				<div class="col-sm">
+					<label for="phone">Phone Number:</label><br>
+					<input type="tel" id="phone" name="phone">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<label for="comments">Comments:</label><br>
+					<textarea id="comments" name="comments" rows="4" required></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<input type="submit" value="Submit" class="btn btn-primary">
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- scripts for Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
