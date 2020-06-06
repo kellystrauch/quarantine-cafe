@@ -1,0 +1,41 @@
+body {
+	background-color: #cbf3f0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	color: #39a59c;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #39a59c;
+}
+
+.btn-primary {
+	background-color: #ff9f1c;
+	border-color: #ffbf69;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:hover {
+	background-color: #e58f19;
+	border-color: #ffbf69;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary.focus,
+.btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(255,159,28,.5);
+}
+
+.form-control:focus{
+	border-color: #ffbf69;
+	box-shadow: 0 0 0 0.2rem rgba(255,159,28,.5);
+}
